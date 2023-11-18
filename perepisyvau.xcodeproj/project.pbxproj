@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		C5CD981C2B075CC5003D7E3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CD981B2B075CC5003D7E3B /* AppDelegate.swift */; };
 		C5CD981E2B075CC5003D7E3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CD981D2B075CC5003D7E3B /* SceneDelegate.swift */; };
-		C5CD98202B075CC5003D7E3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CD981F2B075CC5003D7E3B /* ViewController.swift */; };
+		C5CD98202B075CC5003D7E3B /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CD981F2B075CC5003D7E3B /* DetailsViewController.swift */; };
 		C5CD98232B075CC5003D7E3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5CD98212B075CC5003D7E3B /* Main.storyboard */; };
 		C5CD98252B075CC7003D7E3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5CD98242B075CC7003D7E3B /* Assets.xcassets */; };
 		C5CD98282B075CC7003D7E3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5CD98262B075CC7003D7E3B /* LaunchScreen.storyboard */; };
+		C5CD98312B075CF7003D7E3B /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CD98302B075CF7003D7E3B /* Drink.swift */; };
+		C5CD98342B07625B003D7E3B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CD98332B07625B003D7E3B /* NetworkManager.swift */; };
+		C5CD98362B076B58003D7E3B /* ListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CD98352B076B58003D7E3B /* ListCollectionViewController.swift */; };
+		C5CD983D2B079146003D7E3B /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CD983C2B079146003D7E3B /* CustomCell.swift */; };
+		C5CD983F2B079472003D7E3B /* MargaritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CD983E2B079472003D7E3B /* MargaritesTableViewController.swift */; };
+		C5CD98412B08CE58003D7E3B /* CustomCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CD98402B08CE58003D7E3B /* CustomCVCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C5CD98182B075CC5003D7E3B /* perepisyvau.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = perepisyvau.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5CD981B2B075CC5003D7E3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5CD981D2B075CC5003D7E3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C5CD981F2B075CC5003D7E3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C5CD981F2B075CC5003D7E3B /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		C5CD98222B075CC5003D7E3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C5CD98242B075CC7003D7E3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5CD98272B075CC7003D7E3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5CD98292B075CC7003D7E3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5CD98302B075CF7003D7E3B /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
+		C5CD98332B07625B003D7E3B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		C5CD98352B076B58003D7E3B /* ListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionViewController.swift; sourceTree = "<group>"; };
+		C5CD983C2B079146003D7E3B /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		C5CD983E2B079472003D7E3B /* MargaritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MargaritesTableViewController.swift; sourceTree = "<group>"; };
+		C5CD98402B08CE58003D7E3B /* CustomCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCVCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +69,44 @@
 			isa = PBXGroup;
 			children = (
 				C5CD981B2B075CC5003D7E3B /* AppDelegate.swift */,
+				C5CD98322B076243003D7E3B /* NetworkManager */,
 				C5CD981D2B075CC5003D7E3B /* SceneDelegate.swift */,
-				C5CD981F2B075CC5003D7E3B /* ViewController.swift */,
+				C5CD982F2B075CE1003D7E3B /* Model */,
+				C5CD981F2B075CC5003D7E3B /* DetailsViewController.swift */,
+				C5CD98372B07811E003D7E3B /* Views */,
 				C5CD98212B075CC5003D7E3B /* Main.storyboard */,
 				C5CD98242B075CC7003D7E3B /* Assets.xcassets */,
+				C5CD983E2B079472003D7E3B /* MargaritesTableViewController.swift */,
 				C5CD98262B075CC7003D7E3B /* LaunchScreen.storyboard */,
 				C5CD98292B075CC7003D7E3B /* Info.plist */,
+				C5CD98352B076B58003D7E3B /* ListCollectionViewController.swift */,
 			);
 			path = perepisyvau;
+			sourceTree = "<group>";
+		};
+		C5CD982F2B075CE1003D7E3B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C5CD98302B075CF7003D7E3B /* Drink.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C5CD98322B076243003D7E3B /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				C5CD98332B07625B003D7E3B /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		C5CD98372B07811E003D7E3B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C5CD983C2B079146003D7E3B /* CustomCell.swift */,
+				C5CD98402B08CE58003D7E3B /* CustomCVCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +180,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5CD98202B075CC5003D7E3B /* ViewController.swift in Sources */,
+				C5CD98202B075CC5003D7E3B /* DetailsViewController.swift in Sources */,
+				C5CD983D2B079146003D7E3B /* CustomCell.swift in Sources */,
 				C5CD981C2B075CC5003D7E3B /* AppDelegate.swift in Sources */,
+				C5CD98342B07625B003D7E3B /* NetworkManager.swift in Sources */,
+				C5CD98412B08CE58003D7E3B /* CustomCVCell.swift in Sources */,
+				C5CD983F2B079472003D7E3B /* MargaritesTableViewController.swift in Sources */,
+				C5CD98312B075CF7003D7E3B /* Drink.swift in Sources */,
+				C5CD98362B076B58003D7E3B /* ListCollectionViewController.swift in Sources */,
 				C5CD981E2B075CC5003D7E3B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,9 +355,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dstashkov.perepisyvau;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -335,9 +386,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dstashkov.perepisyvau;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
