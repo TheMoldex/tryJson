@@ -47,6 +47,7 @@ struct Drink: Decodable {
     let strMeasure2: String?
     let strMeasure3: String?
     let strMeasure4: String?
+    let strMeasure5: String?
     let strMeasure6: String?
     let strMeasure7: String?
     let strMeasure8: String?

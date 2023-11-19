@@ -16,18 +16,45 @@ final class DetailsViewController: UIViewController {
     @IBOutlet weak var howToCocking: UITextView!
     
     private let drinks = NetworkManager.shared
-    private var margarites: [Drink] = []
+    private var ingredientsArray = [String]()
     
+    var margarita: Drink!
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchDrinks()
-      
+        setupView()
     }
-    private func fetchDrinks() {
-        drinks.fetchDrinks(from: Link.API.url) { result in
+    
+    private func setupView() {
+        coctailsName.text = margarita.strDrink
+        howToCocking.text = "\(margarita.strInstructions)" + "\nTake the following ingredients\n\(setupIngredients())"
+      
+        fetchImage()
+    }
+    
+    private func setupIngredients() -> String {
+        ingredientsArray.append(margarita.strIngredient1 ?? "1")
+        ingredientsArray.append(margarita.strMeasure1 ?? "1")
+        ingredientsArray.append(margarita.strIngredient2 ?? "2")
+        ingredientsArray.append(margarita.strMeasure2 ?? "2")
+        ingredientsArray.append(margarita.strIngredient3 ?? "3")
+        ingredientsArray.append(margarita.strMeasure3 ?? "3")
+        ingredientsArray.append(margarita.strIngredient4 ?? " ")
+        ingredientsArray.append(margarita.strMeasure4 ?? " ")
+        ingredientsArray.append(margarita.strIngredient5 ?? " ")
+        ingredientsArray.append(margarita.strMeasure5 ?? " ")
+        ingredientsArray.append(margarita.strIngredient6 ?? " ")
+        ingredientsArray.append(margarita.strMeasure6 ?? " ")
+        
+        let stringIngredients = ingredientsArray.joined(separator: " ")
+        return stringIngredients
+    }
+    
+    
+    private func fetchImage() {
+        drinks.fetchImage(from: URL(string:margarita.strDrinkThumb ?? "oh god") ?? Link.imageMargarita.url) { result in
             switch result {
-            case .success(let drinks):
-                self.margarites = drinks.drinks
+            case .success(let imageData):
+                self.drinkImage.image = UIImage(data: imageData)
             case .failure(let error):
                 print(error)
             }
@@ -35,19 +62,3 @@ final class DetailsViewController: UIViewController {
     }
 }
 
-extension DetailsViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        0
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "details", for: indexPath)
-        return cell
-    }
-    
-    
-}
-
-extension DetailsViewController: UITableViewDelegate {
-    
-}
