@@ -15,7 +15,6 @@
 		C5CD98282B075CC7003D7E3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5CD98262B075CC7003D7E3B /* LaunchScreen.storyboard */; };
 		C5CD98312B075CF7003D7E3B /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CD98302B075CF7003D7E3B /* Drink.swift */; };
 		C5CD98342B07625B003D7E3B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CD98332B07625B003D7E3B /* NetworkManager.swift */; };
-		C5CD98362B076B58003D7E3B /* ListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CD98352B076B58003D7E3B /* ListCollectionViewController.swift */; };
 		C5CD983D2B079146003D7E3B /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CD983C2B079146003D7E3B /* CustomCell.swift */; };
 		C5CD983F2B079472003D7E3B /* MargaritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CD983E2B079472003D7E3B /* MargaritesTableViewController.swift */; };
 		C5CD98412B08CE58003D7E3B /* CustomCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CD98402B08CE58003D7E3B /* CustomCVCell.swift */; };
@@ -32,7 +31,6 @@
 		C5CD98292B075CC7003D7E3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5CD98302B075CF7003D7E3B /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
 		C5CD98332B07625B003D7E3B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		C5CD98352B076B58003D7E3B /* ListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionViewController.swift; sourceTree = "<group>"; };
 		C5CD983C2B079146003D7E3B /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		C5CD983E2B079472003D7E3B /* MargaritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MargaritesTableViewController.swift; sourceTree = "<group>"; };
 		C5CD98402B08CE58003D7E3B /* CustomCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCVCell.swift; sourceTree = "<group>"; };
@@ -68,18 +66,13 @@
 		C5CD981A2B075CC5003D7E3B /* perepisyvau */ = {
 			isa = PBXGroup;
 			children = (
-				C5CD981B2B075CC5003D7E3B /* AppDelegate.swift */,
+				C5CD98442B0A989A003D7E3B /* App */,
 				C5CD98322B076243003D7E3B /* NetworkManager */,
-				C5CD981D2B075CC5003D7E3B /* SceneDelegate.swift */,
 				C5CD982F2B075CE1003D7E3B /* Model */,
-				C5CD981F2B075CC5003D7E3B /* DetailsViewController.swift */,
+				C5CD98432B0A9850003D7E3B /* ViewControllers */,
 				C5CD98372B07811E003D7E3B /* Views */,
-				C5CD98212B075CC5003D7E3B /* Main.storyboard */,
-				C5CD98242B075CC7003D7E3B /* Assets.xcassets */,
-				C5CD983E2B079472003D7E3B /* MargaritesTableViewController.swift */,
-				C5CD98262B075CC7003D7E3B /* LaunchScreen.storyboard */,
-				C5CD98292B075CC7003D7E3B /* Info.plist */,
-				C5CD98352B076B58003D7E3B /* ListCollectionViewController.swift */,
+				C5CD98422B0A982B003D7E3B /* Storyboards */,
+				C5CD98452B0A98AD003D7E3B /* Resorces */,
 			);
 			path = perepisyvau;
 			sourceTree = "<group>";
@@ -107,6 +100,42 @@
 				C5CD98402B08CE58003D7E3B /* CustomCVCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		C5CD98422B0A982B003D7E3B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C5CD98212B075CC5003D7E3B /* Main.storyboard */,
+				C5CD98262B075CC7003D7E3B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C5CD98432B0A9850003D7E3B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C5CD981F2B075CC5003D7E3B /* DetailsViewController.swift */,
+				C5CD983E2B079472003D7E3B /* MargaritesTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C5CD98442B0A989A003D7E3B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C5CD981B2B075CC5003D7E3B /* AppDelegate.swift */,
+				C5CD981D2B075CC5003D7E3B /* SceneDelegate.swift */,
+				C5CD98292B075CC7003D7E3B /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C5CD98452B0A98AD003D7E3B /* Resorces */ = {
+			isa = PBXGroup;
+			children = (
+				C5CD98242B075CC7003D7E3B /* Assets.xcassets */,
+			);
+			path = Resorces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,7 +216,6 @@
 				C5CD98412B08CE58003D7E3B /* CustomCVCell.swift in Sources */,
 				C5CD983F2B079472003D7E3B /* MargaritesTableViewController.swift in Sources */,
 				C5CD98312B075CF7003D7E3B /* Drink.swift in Sources */,
-				C5CD98362B076B58003D7E3B /* ListCollectionViewController.swift in Sources */,
 				C5CD981E2B075CC5003D7E3B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,7 +370,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 88PMY4A464;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = perepisyvau/Info.plist;
+				INFOPLIST_FILE = perepisyvau/app/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -373,7 +401,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 88PMY4A464;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = perepisyvau/Info.plist;
+				INFOPLIST_FILE = perepisyvau/app/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
