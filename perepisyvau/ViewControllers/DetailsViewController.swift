@@ -11,26 +11,33 @@ import UIKit
 
 
 final class DetailsViewController: UIViewController {
+    // MARK: - IBOutlets
     @IBOutlet weak var coctailsName: UILabel!
     @IBOutlet weak var drinkImage: UIImageView!
     @IBOutlet weak var howToCocking: UITextView!
     
+    // MARK: - private property
     private let drinks = NetworkManager.shared
     private var ingredientsArray = [String]()
     
+    // MARK: - public propetry
     var margarita: Drink!
+    
+    // MARK: - override
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
     }
-    
+    // MARK: - private func
     private func setupView() {
         coctailsName.text = margarita.strDrink
         howToCocking.text = "\(margarita.strInstructions)" + "\nTake the following ingredients\n\(setupIngredients())"
       
         fetchImage()
     }
-    
+}
+// MARK: - extension
+extension DetailsViewController {
     private func setupIngredients() -> String {
         ingredientsArray.append(margarita.strIngredient1 ?? "1")
         ingredientsArray.append(margarita.strMeasure1 ?? "1")
@@ -48,8 +55,6 @@ final class DetailsViewController: UIViewController {
         let stringIngredients = ingredientsArray.joined(separator: " ")
         return stringIngredients
     }
-    
-    
     private func fetchImage() {
         drinks.fetchImage(from: URL(string:margarita.strDrinkThumb ?? "oh god") ?? Link.imageMargarita.url) { result in
             switch result {
@@ -60,5 +65,6 @@ final class DetailsViewController: UIViewController {
             }
         }
     }
+    
 }
 
