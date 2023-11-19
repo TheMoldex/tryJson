@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class MargaritesTableViewController: UITableViewController {
     private let network = NetworkManager.shared
